@@ -22,9 +22,8 @@ app.post("/", function(req, res){
         }
         return name;
     }
-    if(reverseString(fullName)){
         res.send(reverseString(fullName));
-    } 
+     
 })
 
 app.listen(3000, function () {
