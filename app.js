@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function (req, res) {
-    res.sendFile(__dirname + "/index.html");
+    res.render("/index.html");
 })
 
 app.post("/", function(req, res){
@@ -22,7 +22,7 @@ app.post("/", function(req, res){
         }
         return name;
     }
-        res.send(reverseString(fullName));
+//         res.send(reverseString(fullName));
      
 })
 
